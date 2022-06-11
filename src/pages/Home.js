@@ -31,8 +31,8 @@ class Home extends Component {
     return (
       <div className="Home">
         <h1>Todo's </h1>
-        <Todos todos={this.state.todos} data-testid="new-item-input" /> 
-        <AddTodo addTodo={this.addTodo} data-testid="new-item-button" />
+        <Todos todos={this.state.todos} /> 
+        <AddTodo addTodo={this.addTodo}  />
       </div>
     );
   }
