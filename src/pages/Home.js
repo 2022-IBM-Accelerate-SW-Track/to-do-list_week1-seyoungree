@@ -27,11 +27,21 @@ class Home extends Component {
       todos: new_list,
     });
   };
+
+  //handleRemove =(id) => {
+  //  const newList = list.filter((item) => item.id !== id);
+  //
+  //  this.setState({
+  //    todos: newList,
+  //  });
+  //}
+
   render() {
     return (
       <div className="Home">
         <h1>Todo's </h1>
         <Todos todos={this.state.todos} /> 
+        <hr></hr>
         <AddTodo addTodo={this.addTodo}  />
       </div>
     );
