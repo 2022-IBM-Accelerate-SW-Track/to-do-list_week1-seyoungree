@@ -11,6 +11,7 @@ class Home extends Component {
       todos: []
     };
   }
+  
   // the addTodo function simply creates a new array that includes the user submitted todo item and then
   // updates the state with the new list.
   addTodo = (todo) => {
@@ -28,13 +29,13 @@ class Home extends Component {
     });
   };
 
-  //handleRemove =(id) => {
-  //  const newList = list.filter((item) => item.id !== id);
-  //
-  //  this.setState({
-  //    todos: newList,
-  //  });
-  //}
+  handleRemove = (id) => {
+    let new_list = [];
+    this.setState({
+      todos: new_list,
+    });
+  };
+
 
   render() {
     return (

@@ -19,7 +19,9 @@ export default class About extends Component {
         <div className="centered">
           <div className="name_title">Seyoung Ree</div>
           <div className="brief_description">
-            Hi! Here's a picture of a fish. On the Home page, you can add a to-do list. Bye!
+            Hi! I'm a rising sophomore at Columbia University studying CS.<br></br>
+            Hobbies: coding, piano, broadway, baking <br></br>
+            Here's a picture of a fish. On the Home page, you can add a to-do list. Bye!<br></br>
           </div>
         </div>
       </div>

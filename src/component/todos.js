@@ -20,9 +20,11 @@ const Todos = ({ todos }) => {
               <CardContent>
                 <ListItemButton> 
                   <Checkbox
-                    edge="start"
-                    
-
+                  onClick={() => {
+                    todo.setState ({
+                      complete:true
+                    })
+                  }}
                   />
                   <ListItemText><span className={todo.complete ? "strike" : ""} style={{ padding: "50px" }}>{todo.content}</span></ListItemText>
                 </ListItemButton>
@@ -34,12 +36,16 @@ const Todos = ({ todos }) => {
     ) : (
       <p>{"You have no todo's left"}</p>
     );
-    // Lastly, return the todoList constant that we created above to show all of the items on the screen.
+    
+    
+    // return  todoList constant created above to show all of the items on the screen
     return (
       <div className="todoCollection" style={{ padding: "10px" }}>
         {todoList}
       </div>
     );
 };
+
+
   
 export default Todos;
